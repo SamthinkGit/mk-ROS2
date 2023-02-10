@@ -3,7 +3,7 @@
 :/: Node(.*)$
 :norm jo// Building Subscriber
 :norm o__subscriber_name__ = create_subscription<__interface__>(
-:norm o"__topic__",__param__,
+:norm o"__topic__",__buffer_size__,
 :norm ostd::bind(&__node_name__::__callback__, this, std::placeholders::_1));
 :norm $vkk0=
 :/: Node(.*)$
