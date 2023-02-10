@@ -12,5 +12,6 @@ file='~/.mkscripts'
 echo '# MK Bash Scripts' >> ~/.bashrc
 ls .. | grep -E '.*\.sh' | sed -E 's/\..*//g' | xargs -I% echo 'alias '%"=$file/"%'.sh' >> ~/.bashrc
 ls .. | grep -E '.*\.v'  | sed -E 's/\..*//g' | xargs -I% echo 'alias '%"=$file/"%'.v' >> ~/.bashrc
+echo '# MK Bash Scripts End' >> ~/.bashrc
 chmod +x ~/.mkscripts/*.sh
 chmod +x ~/.mkscripts/*.v

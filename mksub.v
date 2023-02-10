@@ -1,5 +1,7 @@
 #!/usr/bin/vim -s 
-:norm gg
+
+:/#include
+:GGNo using namespace std::placeholders::_1;
 :/: Node(.*)$
 :norm jo// Building Subscriber
 :norm o__subscriber_name__ = create_subscription<__interface__>(

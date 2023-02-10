@@ -17,7 +17,11 @@ cd $pkg_name/src
 touch $pkg_name.cpp
 
 # Editing cmake
-dependence="set(dependencies $@)"
+dependence="set(dependencies"
+for i; do
+	dependence="$dependence\n$i"
+done
+dependence="$dependence\n)"
 executable="add_executable($pkg_name src/$pkg_name.cpp)\nament_target_dependencies($pkg_name \${dependencies})"
 install="install(TARGETS\n  $pkg_name\n  ARCHIVE DESTINATION lib\n  LIBRARY DESTINATION lib\n  RUNTIME DESTINATION lib/\${PROJECT_NAME}\n)"
 
@@ -25,6 +29,7 @@ cd ..
 sed "11 i $dependence\n\n$executable\n\n$install\n" CMakeLists.txt > tempT
 rm CMakeLists.txt
 mv tempT CMakeLists.txt
+vim CMakeLists.txt -c ":norm ggvGG=" -c ":wq"
 
 cd ..
 echo "---------- PACKAGE $pkg_name SUCCESFULLY INSTALLED ----------\n"

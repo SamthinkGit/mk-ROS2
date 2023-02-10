@@ -1,6 +1,6 @@
 #!/usr/bin/vim -s
-
-:norm GG
+:norm gg0i#include "rclcpp/rclcpp.hpp"
+:norm gg
 :norm iclass __node_name__ : public rclcpp::Node
 :norm o{
 :norm opublic:
