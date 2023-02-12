@@ -1,7 +1,7 @@
 #!/usr/bin/vim -s
 :norm gg0i#include "rclcpp/rclcpp.hpp"
 :norm gg
-:norm iclass __node_name__ : public rclcpp::Node
+:norm oclass __node_name__ : public rclcpp::Node
 :norm o{
 :norm opublic:
 :norm o__node_name__()

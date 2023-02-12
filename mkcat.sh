@@ -41,7 +41,7 @@ while true; do
   fi
 
   if [ "$next_action" = "help" ]; then
-    ls ~/scripts | grep -E "*\.v$" | less
+	  ls ~/.mkscripts | grep -E '[^.]*\.v$' | less
   fi
 
   if [ "$next_action" = "vim" ]; then
