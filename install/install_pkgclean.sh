@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/bin/bash
 # Auto Package Cleaning tool
 # Author: SamthinkGit
 # Checks:
@@ -23,7 +22,7 @@ echo 'set expandtab' >> ~/.vimrc
 echo 'set smartindent' >> ~/.vimrc
 
 # Generating cleaning macro
-echo 'let @0="/{\ny$GG$p:%s/^[ \\t]*$//g\n:%s/ *$//g\n:%s/\\([^ ]\\){$/\\1\\r{/g\nggvGG$=GGdd"' >> ~/.vimrc
+echo -E 'let @0="/{\ny$GG$p:%s/^[ \\t]*$//g\n:%s/ *$//g\n:%s/\\([^ ]\\){$/\\1\\r{/g\nggvGG$=GGdd"' >> ~/.vimrc
 
 # Adding pkgclean command
 echo "# Vim Cleaning tool" >> ~/.bashrc
