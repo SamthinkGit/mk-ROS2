@@ -1,5 +1,5 @@
 # mk-ros2
-mk-ros2 is a set of vim-based development tools for faster ROS2 development. It includes commands for creating new packages and source files, cleaning source files from typos, and adding various ROS2 components such as nodes, main functions, publishers, and subscribers.
+mk-ros2 is a set of vim-based development tools for faster ROS2 script generating. It includes commands for creating new packages, source files, cleaning source files from typos, and adding various ROS2 components such as nodes, main functions, publishers, subscribers...
 
 ## Installation
 To install this tools yo must use the following steps:
