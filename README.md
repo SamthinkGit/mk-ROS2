@@ -1,10 +1,10 @@
 # mk-ros2
-mk-ros2 is a set of vim-based development tools for faster ROS2 development. It includes commands for creating new packages and source files, cleaning source files from typos, and adding various ROS2 components such as nodes, main functions, publishers, and subscribers.
+mk-ros2 is a set of vim-based development tools for faster ROS2 script generating. It includes commands for creating new packages, source files, cleaning source files from typos, and adding various ROS2 components such as nodes, main functions, publishers, subscribers...
 
 ## Installation
 To install this tools yo must use the following steps:
 
-1. **[Optiional]** If you don't have vim installed you must download it. If you don't know if you have or not only type ```vim```. For installin vim you can use:
+1. **[Optional]** If you don't have vim installed you must download it. If you don't know if you have or not only type ```vim```. For installin vim you can use:
 ```bash
 sudo apt install vim
 ```
@@ -30,11 +30,11 @@ The commands are all prefixed with mk and are explained in detail in the [wiki](
 - **mkpkg**: Builds a new package in the repository.
 - **mksrc**: Builds a new source file inside a package.
 - **pkgclean**: Cleans a source file from typos.
-- **mkcat**: Terminal tool for applying mk implementations to a source file. With this tool, you can quickly use the following tools:
+- **mkcat**: Terminal tool for applying mk implementations to a source file. With this tool, you can use node-targeted scripts such as:
   - **mknode**: Builds a new node.
   - **mkmain**: Adds a main function at the end.
   - **mkpub**: Adds a publication to a topic to the node.
-  - **mksub**: Adds a subscriber to a topic to the node.
+ 
   - **edit**: Replace tags with a new name
   
 ## Examples
