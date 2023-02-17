@@ -1,0 +1,3 @@
+[submodule "ThirdParty/cch"]
+	path = ThirdParty/cch
+	url = https://github.com/tjps/cch
