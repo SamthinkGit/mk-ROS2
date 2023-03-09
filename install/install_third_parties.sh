@@ -1,6 +1,6 @@
 #!/bin/sh
 
 # Installing cch
-cd ../ThirdParties/cch
+cd ../ThirdParty/cch
 make && make test && sudo make install
 
